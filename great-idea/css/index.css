@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -31,9 +30,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
@@ -49,7 +48,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	/* border: 2px solid grey; */
 }
 
 html, body {
@@ -64,3 +64,180 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	margin: 50px 10% 200px 10%;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 25px;
+}
+
+/* This is the Nav CSS */
+header nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+header nav a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: grey;
+	font-size: 25px;
+}
+
+.logo {
+	height: 6vh
+}
+
+/* This is the title and image CSS */
+.top {
+	display: flex;
+	justify-content: space-around;
+	margin: 80px 0;
+}
+
+.mainDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#superBig {
+	font-size: 100px;
+	font-family: 'Modak', cursive;
+	text-align: center;
+}
+
+.mainP {
+	border: 2px solid grey;
+	padding: 10px 50px;
+}
+
+/* This is the features and about CSS */
+.featuresAbout {
+	display: flex;
+	border-top: 2px solid grey;
+	padding: 50px 0;
+}
+
+/* This is the img CSS */
+.middle-img {
+	width: 100%;
+}
+
+/* This is the services and product CSS */
+.servicesProduct {
+	display: flex;
+	border-bottom: 2px solid grey;
+	padding: 50px 0;
+}
+
+/* This is the footer CSS */
+footer {
+	margin: 50px 0;
+}
+
+address {
+	font-size: 25px;
+}
+.copyright {
+	text-align: center;
+	padding: 50px 0 150px;
+}
+
+
+
+/* This is the services.html CSS */
+
+/* This is the top img CSS */
+.topImg {
+	margin: 50px 0;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+/* This is the services section CSS */
+.servicesSection {
+	padding-bottom: 50px;
+	border-bottom: 2px solid grey;
+	margin-bottom: 50px;
+}
+
+/* This is the development section CSS */
+h3 {
+	font-size: 32px;
+}
+
+.developmentSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	border-bottom: 2px solid grey;
+}
+
+.developmentDiv {
+	border: 2px solid grey;
+	background-color: lightgrey;
+	padding: 30px;
+	margin: 17px 0;
+	width: 49%;
+}
+
+.dP {
+	padding: 20px 0;
+}
+
+.dButton {
+	padding: 20px 50px;
+	margin-top: 10px;
+	font-size: 25px;
+	border-radius: 10px;
+	border: 2px solid grey;
+}
+
+/* This is the facts section CSS */
+.factsSection {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+
+.factsDiv {
+	width: 45%;
+}
+
+.services-info-img {
+	width: 50%;
+	height: 45vh;
+}
+
+.factsP {
+	padding: 20px 0;
+}
+
+.factsDiv ul {
+	font-size: 25px;
+	margin-left: 3.5%;
+	padding: 15px 0;
+}
+
+.factsDiv ul li {
+	padding-bottom: 20px;
+	list-style-type: square;
+}
+
+/* This is the footer CSS */
+footer p {
+	text-align: center;
+	font-size: 25px;
+	margin: 200px 0 50px;
+}

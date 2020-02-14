@@ -241,3 +241,11 @@ footer p {
 	font-size: 25px;
 	margin: 200px 0 50px;
 }
+
+@media(max-width: 1000px){
+	.developmentSection {
+		display:flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+}
